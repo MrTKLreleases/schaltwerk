@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 24,
- "tag": "v1.0.0-build.24",
- "published": "2026-10-11T01:49:08Z",
- "notes": "Test the IC interface with mouse events; fix picking a row in the chip dialog\n\nA click on a pin row in the chip dialog used the rounding meant for the\ngap where a dragged pin lands, so it picked the row below or nothing.\nTests now drive the dialog, the double click into a chip and the pin\nbox with simulated mouse events. docs/offen.md says what CI covers now.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 25,
+ "tag": "v1.0.0-build.25",
+ "published": "2026-10-11T01:50:24Z",
+ "notes": "Name example parts in the player's language\n\nProbes and pots in the examples were called Netz, Last, Licht even in\nEnglish. Example files now carry English names for them (\"labels\"),\nused when the game runs in English. The generator keeps those names and\ngives the computer example's chips their pinmap, so regenerating no\nlonger drops it; it also writes the default parameters parts have now.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.24/schaltwerk-windows.tar.gz",
-   "sha256": "f257283cdd5c7512bb4faf303697839277a6e6d989295cfb5cce65db414335e6",
-   "size": 29008151
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.25/schaltwerk-windows.tar.gz",
+   "sha256": "6c4bcb99d6dad4ace2ce2adfab6d94d0017d83f9e64ce3171e31370ffd8f4723",
+   "size": 29009313
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.24/schaltwerk-linux.tar.gz",
-   "sha256": "468eba7ad5fd275742c82ee82e0dc6eb918f4dd91341df18eb15533dc17fcd0c",
-   "size": 46788589
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.25/schaltwerk-linux.tar.gz",
+   "sha256": "9bdf3226e9108cf3f6865070f5ad75cbb80a86ad881fdcdc0e47b7825ece87a1",
+   "size": 46785243
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.24/schaltwerk-macos.tar.gz",
-   "sha256": "051c1e8810f66f40c92ad1fec3b39e7e064ed15584d0a19421fb358f2958dc8d",
-   "size": 19840645
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.25/schaltwerk-macos.tar.gz",
+   "sha256": "584c65805f1adbaf4bb73567b62bb3dface2db1c9c9da19dac35cc559b09e44a",
+   "size": 19841153
   }
  }
 }
