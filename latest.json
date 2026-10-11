@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 26,
- "tag": "v1.0.0-build.26",
- "published": "2026-10-11T01:50:44Z",
- "notes": "Merge dragged wires with the wires they land on\n\nOnly newly drawn wires were merged; a wire dragged along (or one whose\nreroute found no way) could end up lying on another one as double\ncopper. After a drag the moved wires are laid again like new ones.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 27,
+ "tag": "v1.0.0-build.27",
+ "published": "2026-10-11T01:52:31Z",
+ "notes": "Docs: macOS paths are in the preset now (branch claude/selbst-update)\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.26/schaltwerk-windows.tar.gz",
-   "sha256": "4ddf1a176f81093169eb346fc408d04c2f4456031fabc22cd820b8f93214c4fa",
-   "size": 29007910
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.27/schaltwerk-windows.tar.gz",
+   "sha256": "e7342b3de93d3b1211476068aa50d54f77a9277e180842fee33c031404fa810c",
+   "size": 29009903
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.26/schaltwerk-linux.tar.gz",
-   "sha256": "a08dee3a958b3b3860ea729043fa9e0aa987882b320436c28bb00c6f27887d46",
-   "size": 46785589
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.27/schaltwerk-linux.tar.gz",
+   "sha256": "d70a41fd9aed7c997f79c28c7746e5df94906a17bc32d18f9d6ec154b7899a21",
+   "size": 46784366
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.26/schaltwerk-macos.tar.gz",
-   "sha256": "ba3be444e025f6e3dde176ccdfc62932cb2a00f9bba305add9daa3455ec676ac",
-   "size": 19841918
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.27/schaltwerk-macos.tar.gz",
+   "sha256": "8c0bac1f4a2f2e9b235e1bae7d8b2bfb5f10cbc3977fbc68280d61ded808cc7f",
+   "size": 19842339
   }
  }
 }
