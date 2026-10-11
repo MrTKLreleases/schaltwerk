@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 40,
- "tag": "v1.0.0-build.40",
- "published": "2026-10-11T04:04:03Z",
- "notes": "Short check results and examples instead of huge truth tables\n\nThe 4-bit ALU listed 512 cases after a check and drew a truth table with\n14 columns - far too long to scroll. A long result now shows the first\nsix failures and counts the rest; a formula test with numbers shows six\nexample cases and a marked row for the switches as they stand, with\nthe lamps green or red. A real truth table remains for at most four\nsingle bits. Also writes the chapter plan for the next levels.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 41,
+ "tag": "v1.0.0-build.41",
+ "published": "2026-10-11T04:11:20Z",
+ "notes": "Instruction sets ACC8 and RV32I, wide program memory and its editor\n\nThe coming CPU chapters need programs longer than 16 bytes and\nprocessors with real instruction sets. Instruction sets are now a\nregistry: ACC8 (the 8-bit accumulator CPU, 16-bit words) and RISC-V\nRV32I, each with an assembler with labels (RISC-V with the usual pseudo\ninstructions), the meaning of every word and an emulator the levels\ntake their expected outputs from. The new wide program memory holds up\nto 4096 words of up to 32 bits; its editor shows the program text,\neach line's words and meaning, the instructions and a test run - as\nhex words until a level unlocks the assembler. Program tests read a\nwide output lamp and the text on displays.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.40/schaltwerk-windows.tar.gz",
-   "sha256": "4232ed6528d52e555eb822231a1245c44d2932772d70c09381db890a57204b8c",
-   "size": 29044652
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.41/schaltwerk-windows.tar.gz",
+   "sha256": "681dac7ba3602b712f1e62ce8ab23d79fd4ebd62df963f16b5dd602182445de3",
+   "size": 29086919
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.40/schaltwerk-linux.tar.gz",
-   "sha256": "7512812dd61a38758fba1463f1db0d5ce9289fa3d1b2205c0ade762bb736da61",
-   "size": 46814099
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.41/schaltwerk-linux.tar.gz",
+   "sha256": "8e65a4e0df6d9eb9ea61b7de37599360548661c8d2a069f1e10ef2531229039a",
+   "size": 46852791
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.40/schaltwerk-macos.tar.gz",
-   "sha256": "e4182c9983a169eedb0ce72e02b09c78a980860acc8bf21428f9bd7fab4cf71b",
-   "size": 19878238
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.41/schaltwerk-macos.tar.gz",
+   "sha256": "2033b5a76ca35bfedcea52559b2bc0c247d9adbe400f5c0776de00917a6c932b",
+   "size": 19917699
   }
  }
 }
