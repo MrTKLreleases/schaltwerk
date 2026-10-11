@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 46,
- "tag": "v1.0.0-build.46",
- "published": "2026-10-11T04:31:05Z",
- "notes": "Chapter 12: programs for the 8-bit CPU (8 levels)\n\nThe computer of chapter 11 is given, wired, with an empty program\nmemory; the player only programs. The first two levels are machine\ncode by hand, 'The assembler' then unlocks assembler for every later\nACC8 program. Output, counting, a sum, multiplying by adding,\nFibonacci until the carry, division with remainder and subroutines.\nEvery model program runs on the CPU8 model solution itself, and the\nexpected outputs come from the emulator.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 47,
+ "tag": "v1.0.0-build.47",
+ "published": "2026-10-11T04:35:00Z",
+ "notes": "Bit field, bit extender, uneven pieces, more bus widths\n\nA RISC-V instruction keeps its fields at odd places (rd in bits 11..7,\nimmediates scattered over several fields) and widens 12-bit numbers\nwith their sign. New parts: the bit field takes neighbouring bits out\nof a bus, the bit extender widens with zeros or the sign; splitter and\ncombiner take a list of uneven pieces. Buses may now also be 3, 5, 6,\n7, 12, 20 and 24 bits wide, and a program memory can hold a plain\ntable (for control units).\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.46/schaltwerk-windows.tar.gz",
-   "sha256": "790aefdad5bea9eed2da9db6ea6d50870e011d1fe416b4b74a6c56f228fb6af3",
-   "size": 29120024
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.47/schaltwerk-windows.tar.gz",
+   "sha256": "42315e99b1370686243ce6a623a854ecbe44d2801ed52bcf9407de296e031f39",
+   "size": 29124646
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.46/schaltwerk-linux.tar.gz",
-   "sha256": "b19467e47fd90a700c40747e9f761c497946e604fbc742d459baa4000f69cda0",
-   "size": 46901048
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.47/schaltwerk-linux.tar.gz",
+   "sha256": "5174add0ec99bbff353d677086c97baa24bc7900e0bc4fe543457b4dbf35e3cc",
+   "size": 46904569
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.46/schaltwerk-macos.tar.gz",
-   "sha256": "67b4d9a37506e973042a400ed1224fb05284f135e1e061e74cac091c66d0927f",
-   "size": 19961958
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.47/schaltwerk-macos.tar.gz",
+   "sha256": "e5106b526165eb5528c278d3243666b007a7f84b2c9be2b2825a7285312485d0",
+   "size": 19966699
   }
  }
 }
