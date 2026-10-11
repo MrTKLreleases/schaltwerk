@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 31,
- "tag": "v1.0.0-build.31",
- "published": "2026-10-11T02:25:29Z",
- "notes": "Add chapter 12 \"Buses & displays\" with 16 levels\n\nFrom the first lit digit through decoders, a ROM as lookup table, the\nbus tool, a running light, a dot matrix driven row by row (the player\nmakes the SCAN chip) and pictures from bytes, to text on an LCD and a\ncounter display 0-9. Each level has a three-star model solution whose\nwires the router lays, as in the game. Checks read display pins\n(SEG1.a), LCD text and the matrix picture.\n\nFound on the way: a bus narrowing from both sides needs its outer\nwires first (new order outside-in); WR/CLR of the LCD move below the\ndata pins so they stay reachable after a data bus; a WR already high\nat the start of a simulation no longer writes an empty character.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 32,
+ "tag": "v1.0.0-build.32",
+ "published": "2026-10-11T02:46:36Z",
+ "notes": "Remove the analog side: the game is about digital circuits now\n\nWish of the player: take the analog part out completely. Gone are the\nanalog simulation (nodal analysis, device models), the analog parts\n(sources, resistors, capacitors, coils, diodes, LEDs, transistors,\nMOSFETs, op-amps, switches, lamps, meters, probe, net names), chapters\n4-7 with their 20 levels, the analog examples, the oscilloscope, value\nand current display, sparks and smoke, five achievements and the\ntranslations only they used. The simulator is pure logic.\n\nThe remaining chapters are numbered 1-8 (56 levels); the lexicon's\nbasic terms are digital now (bits, hex, edges, bus, ASCII); progress\nfiles drop stars, circuits and achievements that no longer exist; the\nmenu background, store art, docs and Steam texts follow.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.31/schaltwerk-windows.tar.gz",
-   "sha256": "f54906dd27e134052d7521cf57c325b7b5954acea2dfa00cef0a5c2167065fdf",
-   "size": 29049061
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.32/schaltwerk-windows.tar.gz",
+   "sha256": "84f959012cc2094dc7ab3202522374f7725508146c2afbb82d93385c2fbdb5e7",
+   "size": 28951746
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.31/schaltwerk-linux.tar.gz",
-   "sha256": "edc76aaf512f3baace0d89011cfff805dfc919423f8de42805c12c8d7780a8d7",
-   "size": 46823360
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.32/schaltwerk-linux.tar.gz",
+   "sha256": "2d6b0c6a67b13ec9096b2916d453197c1233dc742a3eb76a1bf70a7e0601ae32",
+   "size": 46725291
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.31/schaltwerk-macos.tar.gz",
-   "sha256": "39f05bb453549e3f50ef2cc2d12654f63eddfeba2fd2c2b4f3b124b04444e563",
-   "size": 19881706
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.32/schaltwerk-macos.tar.gz",
+   "sha256": "8dac4051f1956a216df68d65764e654a251daf73ff727846d062a57d6f37488b",
+   "size": 19779892
   }
  }
 }
