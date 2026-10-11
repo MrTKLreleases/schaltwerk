@@ -1,0 +1,25 @@
+{
+ "program": "schaltwerk",
+ "version": "1.0.0",
+ "build": 11,
+ "tag": "v1.0.0-build.11",
+ "published": "2026-10-11T00:24:26Z",
+ "notes": "Schaltwerk 1.0.0, build 11",
+ "assets": {
+  "windows": {
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.11/schaltwerk-windows.tar.gz",
+   "sha256": "16c1cc2386e341942ea2315c9e10eb847aed8c5fae6720e0918aaf40ff763533",
+   "size": 28956349
+  },
+  "linux": {
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.11/schaltwerk-linux.tar.gz",
+   "sha256": "5d51b617596dd152c39cf538aefc61ac8fb7c07ff80b1bca14aee8ca919ee89d",
+   "size": 46738850
+  },
+  "macos": {
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.11/schaltwerk-macos.tar.gz",
+   "sha256": "94ae430e52aa15d6e500e44b174446165cb6491b31b016ffccd1d1a68be352bc",
+   "size": 19792816
+  }
+ }
+}
