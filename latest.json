@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 27,
- "tag": "v1.0.0-build.27",
- "published": "2026-10-11T01:52:31Z",
- "notes": "Docs: macOS paths are in the preset now (branch claude/selbst-update)\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 28,
+ "tag": "v1.0.0-build.28",
+ "published": "2026-10-11T01:59:19Z",
+ "notes": "Add displays: 7-segment, LED bar, 8x8 dot matrix, text LCD\n\nThe coming chapter on buses and displays needs them. Segments and LEDs\nlight from their own inputs; the matrix lights where a row is 1 and a\ncolumn 0 and lets LEDs glow on a moment, so scanning rows (multiplexing)\nshows a whole picture; the LCD writes the character code D7..D0 on a\nrising edge at WR and clears on CLR. All in a new palette group\n\"Displays\" with the hex display, lexicon texts and pin descriptions.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.27/schaltwerk-windows.tar.gz",
-   "sha256": "e7342b3de93d3b1211476068aa50d54f77a9277e180842fee33c031404fa810c",
-   "size": 29009903
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.28/schaltwerk-windows.tar.gz",
+   "sha256": "77df7715c4157188d30a174532c652c1c3f23163b5e48540e2d328d39baa0adb",
+   "size": 29018937
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.27/schaltwerk-linux.tar.gz",
-   "sha256": "d70a41fd9aed7c997f79c28c7746e5df94906a17bc32d18f9d6ec154b7899a21",
-   "size": 46784366
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.28/schaltwerk-linux.tar.gz",
+   "sha256": "2727d36854e38eb99c1dc0a1e02a675a7c28ddd7913a0f946682a7976f9d21d2",
+   "size": 46794128
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.27/schaltwerk-macos.tar.gz",
-   "sha256": "8c0bac1f4a2f2e9b235e1bae7d8b2bfb5f10cbc3977fbc68280d61ded808cc7f",
-   "size": 19842339
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.28/schaltwerk-macos.tar.gz",
+   "sha256": "f4d70807091d1607c3ab0880914235992652881a05748b881f5e7dac4e72ee88",
+   "size": 19852548
   }
  }
 }
