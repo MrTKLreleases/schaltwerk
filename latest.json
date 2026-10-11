@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 29,
- "tag": "v1.0.0-build.29",
- "published": "2026-10-11T02:04:09Z",
- "notes": "Draw big boards fast: geometry once per change, traces in a layer\n\nThe computer example took 160 ms per frame: every frame recomputed the\npins of every part for every wire piece (own chips with their whole\npin layout) and filled every trace pixel anew. Pins, outlines, joints\nand branches are now worked out once per change, the traces live in a\nlayer that only re-colours the wires whose signal changed, and chip\nlayouts, IC pin info and palette icons are kept. Now 21-28 ms per\nframe, also with a clock toggling every frame; the picture is pixel\nfor pixel the same as before.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 30,
+ "tag": "v1.0.0-build.30",
+ "published": "2026-10-11T02:13:15Z",
+ "notes": "Add the bus tool: lay a bundle of wires between pin groups\n\nJoining 8 pins to 8 pins took 8 wires by hand. The bus tool (B) takes\nthe pins inside a frame - or a whole IC group like A[0..3] on a click -\nthen as many target pins, and lays one wire per pair: each beside the\none before, same shape one step aside, leaving pins straight out of\ntheir parts. Both orders are tried and the one with fewer crossings\nwins. The wires share a bundle number (saved), and dragging a piece of\none moves the matching piece of the others, so the bus keeps its\nspacing.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.29/schaltwerk-windows.tar.gz",
-   "sha256": "56a594632166a2025d8949bfedd5c0bfb3c89464f4c618abbe8b16733e458dea",
-   "size": 29023298
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.30/schaltwerk-windows.tar.gz",
+   "sha256": "01202fd4dd6dc5093ff2ccc6e6a0e3e7dab9f8893439edc3f91c31ecc261fb0f",
+   "size": 29033229
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.29/schaltwerk-linux.tar.gz",
-   "sha256": "04776b1549c5e61eef9bb17359c2ea34bc3aa28076255db63381a62764be2f97",
-   "size": 46803873
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.30/schaltwerk-linux.tar.gz",
+   "sha256": "28c611a4ccfb3c8633ae3519b1d18b5449e88c45003e778ced205f524f88fb83",
+   "size": 46803966
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.29/schaltwerk-macos.tar.gz",
-   "sha256": "9e8f23394302070fe85eb79398014a2bdc77c729c410f8bc89a9ad6abeec558a",
-   "size": 19856762
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.30/schaltwerk-macos.tar.gz",
+   "sha256": "0c80dcd0c1cb65a44ac2e20c46248152630c5078ea4332d0425b738d8be51cd5",
+   "size": 19870028
   }
  }
 }
