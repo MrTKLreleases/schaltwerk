@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 48,
- "tag": "v1.0.0-build.48",
- "published": "2026-10-11T05:13:53Z",
- "notes": "Level texts fit the intro box; docs for chapters 9 to 16\n\nIndented lines (tables, code) are not wrapped, so long ones were cut\noff in the intro window; they are shortened and a test keeps them at 72\ncharacters at most.\n\nThe history entry records what was built and where it differs from the\nchoices: the pipeline has two stages instead of five, and chapter 15\nhas no sorting and no dot matrix yet - both are in the plan now, as are\nachievements for the new chapters. The limits of the RISC-V hardware and\nthe missing play test are in the open items.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 49,
+ "tag": "v1.0.0-build.49",
+ "published": "2026-10-11T05:29:36Z",
+ "notes": "Straight bridges instead of half circles where wires cross\n\nIn tight bundles the half circles ran into each other and the wires\nlooked like wavy lines. Now both wires stay straight: the more\nhorizontal one runs on as a bridge, and the crossed wire shows a short\ndark gap on both sides of it. Crossings close to each other share one\nbridge, so a bus crossing a bundle gets a single one.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.48/schaltwerk-windows.tar.gz",
-   "sha256": "5685780aa9c0aabb605cf56f57ec782735d2eb0acd97bd73708e092bbd9cab14",
-   "size": 29179357
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.49/schaltwerk-windows.tar.gz",
+   "sha256": "eb12ff061c19e8d89975b4ba26bfa10a1cbb241e756933b1c728fbd9243ac43c",
+   "size": 29179098
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.48/schaltwerk-linux.tar.gz",
-   "sha256": "530a58f9efff38b7abcf5be22d71e471d43496328b93196b012bc777d9657f53",
-   "size": 46954917
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.49/schaltwerk-linux.tar.gz",
+   "sha256": "62563827544af3ad0a593a3e82ea7f66a9efb86d6d5e8ca578024bae78338568",
+   "size": 46957139
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.48/schaltwerk-macos.tar.gz",
-   "sha256": "3abb3e2282f635436700ca191a71bb22305fb95ec73f268df8106efaf6b12d1e",
-   "size": 20024705
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.49/schaltwerk-macos.tar.gz",
+   "sha256": "e2002aba2e7804f4f1b3e848fe3715c2607d875f130abc7338cb6b25ae85d201",
+   "size": 20024595
   }
  }
 }
