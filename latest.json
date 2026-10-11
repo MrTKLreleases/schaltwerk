@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 11,
- "tag": "v1.0.0-build.11",
- "published": "2026-10-11T00:24:26Z",
- "notes": "Schaltwerk 1.0.0, build 11",
+ "build": 12,
+ "tag": "v1.0.0-build.12",
+ "published": "2026-10-11T00:28:39Z",
+ "notes": "Note the first published build and the end-to-end update test on Linux\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.11/schaltwerk-windows.tar.gz",
-   "sha256": "16c1cc2386e341942ea2315c9e10eb847aed8c5fae6720e0918aaf40ff763533",
-   "size": 28956349
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.12/schaltwerk-windows.tar.gz",
+   "sha256": "22674da099861ef434739a3987df7263b6765ee49908b637bbd75b6508366ce4",
+   "size": 28959993
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.11/schaltwerk-linux.tar.gz",
-   "sha256": "5d51b617596dd152c39cf538aefc61ac8fb7c07ff80b1bca14aee8ca919ee89d",
-   "size": 46738850
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.12/schaltwerk-linux.tar.gz",
+   "sha256": "d082a00be33d6a6af89603b98991daace68bbda954764692eb36b5da7ed52f43",
+   "size": 46736433
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.11/schaltwerk-macos.tar.gz",
-   "sha256": "94ae430e52aa15d6e500e44b174446165cb6491b31b016ffccd1d1a68be352bc",
-   "size": 19792816
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.12/schaltwerk-macos.tar.gz",
+   "sha256": "2e5fdff0cd24e0d0f701b26a9c28cb65c02066ace2c5604dcd3296b22093506f",
+   "size": 19792262
   }
  }
 }
