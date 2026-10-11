@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 15,
- "tag": "v1.0.0-build.15",
- "published": "2026-10-11T00:51:37Z",
- "notes": "Check in every build that the packed game knows its build number\n\nOn Windows the game showed no build number and offered no update. The\nselftest now writes what the self-update sees, and the build fails when\nthe packed game does not know its build or cannot update itself; --version\nalso prints the build.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 16,
+ "tag": "v1.0.0-build.16",
+ "published": "2026-10-11T00:59:16Z",
+ "notes": "Tidy main menu: a real wired background, a clean title\n\nThe menu background put parts on top of each other and ran traces\nthrough them. It is now a small circuit: parts on their own grid spots\nthat never touch, wired output to input by the router around them. The\ntitle's shadow fell one font pixel diagonally into the next letter; it\nnow sits straight below.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.15/schaltwerk-windows.tar.gz",
-   "sha256": "1f5e8326bd2d01a442e30126e596220f10fe68251f4bdf1ec1e1f419b5a5904f",
-   "size": 28961521
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.16/schaltwerk-windows.tar.gz",
+   "sha256": "cf94ae0f978c3a094b6d727511ef015a9539c726b2d7e2ba4b297832a4134d34",
+   "size": 28964745
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.15/schaltwerk-linux.tar.gz",
-   "sha256": "de2b02b631401521d6a284e9ae3913402a129ba462fa78acecfbf2cb8d792c56",
-   "size": 46740102
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.16/schaltwerk-linux.tar.gz",
+   "sha256": "ec6054313bb40b25d5ff97924870180299eea320816a0d26943d282329505bf0",
+   "size": 46728397
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.15/schaltwerk-macos.tar.gz",
-   "sha256": "371eb314d45cf9833ee609480ba04cacc7df3885e3477c499b6e5b0add90f78c",
-   "size": 19793315
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.16/schaltwerk-macos.tar.gz",
+   "sha256": "d0eb582a1e8152ec3587cb5f712b57465b858c4ea3982635b1bea334d500b7e5",
+   "size": 19794589
   }
  }
 }
