@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 12,
- "tag": "v1.0.0-build.12",
- "published": "2026-10-11T00:28:39Z",
- "notes": "Note the first published build and the end-to-end update test on Linux\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 13,
+ "tag": "v1.0.0-build.13",
+ "published": "2026-10-11T00:34:57Z",
+ "notes": "Self-update: a Windows helper that works without a console, clearer labels\n\nThe update offered \"version 1.0.0\" because only the build number\nchanges, and on Windows the new version did not start. The helper now\nwaits until the folder can be renamed instead of using tasklist and\ntimeout (which does not wait without a console), gets its paths through\nenvironment variables, runs without a window with its streams redirected\nand logs to %TEMP%. The menu names builds. The swap and restart test runs\non Windows, Linux and macOS in every build.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.12/schaltwerk-windows.tar.gz",
-   "sha256": "22674da099861ef434739a3987df7263b6765ee49908b637bbd75b6508366ce4",
-   "size": 28959993
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.13/schaltwerk-windows.tar.gz",
+   "sha256": "e907911fba20f2c661e0d74864eea3fd2373f96087e5122f1878862bcae9dd55",
+   "size": 28963431
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.12/schaltwerk-linux.tar.gz",
-   "sha256": "d082a00be33d6a6af89603b98991daace68bbda954764692eb36b5da7ed52f43",
-   "size": 46736433
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.13/schaltwerk-linux.tar.gz",
+   "sha256": "cf579b3f4814d8d8548f163dd9b85ff08ba56ec8dec2076e28d8a26967060c64",
+   "size": 46737600
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.12/schaltwerk-macos.tar.gz",
-   "sha256": "2e5fdff0cd24e0d0f701b26a9c28cb65c02066ace2c5604dcd3296b22093506f",
-   "size": 19792262
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.13/schaltwerk-macos.tar.gz",
+   "sha256": "1949792c09ca83dd4cc340fd78e14f32e9d2cebe54b5c706aa36a72190c97a71",
+   "size": 19790915
   }
  }
 }
