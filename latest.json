@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 50,
- "tag": "v1.0.0-build.50",
- "published": "2026-10-11T05:29:56Z",
- "notes": "Help text: crossings are bridges now, not half circles\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 51,
+ "tag": "v1.0.0-build.51",
+ "published": "2026-10-11T12:45:47Z",
+ "notes": "Plan: help, levels, mini games and the schematic view\n\nThe answers of a round of 100 questions and the packages that follow\nfrom them: the schematic view first (as the main view, the board stays\nswitchable), then help with diagnosis and the robot Ohmi, about 90 more\nlevels in stages, and mini games as rewards.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.50/schaltwerk-windows.tar.gz",
-   "sha256": "ed1518dc393510d0cf1ed72e0571c572e73d431a6f417b978bf8f6b2f8f80599",
-   "size": 29178008
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.51/schaltwerk-windows.tar.gz",
+   "sha256": "a827454ea5be01f863cf045ecd8bd6ed40ba684c3eacf8b6b2c095e4ca7a3fd3",
+   "size": 29177813
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.50/schaltwerk-linux.tar.gz",
-   "sha256": "ceaa1f4bbe2fba1e93e71165dbf1286e4b91863d51e0b33ee756bc0f45caceb8",
-   "size": 46955386
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.51/schaltwerk-linux.tar.gz",
+   "sha256": "b25f63c4bed29fcae13148394e5a10b2007dbc8a5719bab7ea0e5a329f32f706",
+   "size": 46956460
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.50/schaltwerk-macos.tar.gz",
-   "sha256": "3fa89bcf5ff13950a7c908743c02442bd88ffc9f5ba6ae14c7ba94f17ccdbf91",
-   "size": 20025786
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.51/schaltwerk-macos.tar.gz",
+   "sha256": "af9dcb149d1a82fbe9ee7c5154f0d83ececd4e4ae0f4753271548cb2fe9f3eeb",
+   "size": 20026302
   }
  }
 }
