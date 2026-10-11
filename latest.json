@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 28,
- "tag": "v1.0.0-build.28",
- "published": "2026-10-11T01:59:19Z",
- "notes": "Add displays: 7-segment, LED bar, 8x8 dot matrix, text LCD\n\nThe coming chapter on buses and displays needs them. Segments and LEDs\nlight from their own inputs; the matrix lights where a row is 1 and a\ncolumn 0 and lets LEDs glow on a moment, so scanning rows (multiplexing)\nshows a whole picture; the LCD writes the character code D7..D0 on a\nrising edge at WR and clears on CLR. All in a new palette group\n\"Displays\" with the hex display, lexicon texts and pin descriptions.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 29,
+ "tag": "v1.0.0-build.29",
+ "published": "2026-10-11T02:04:09Z",
+ "notes": "Draw big boards fast: geometry once per change, traces in a layer\n\nThe computer example took 160 ms per frame: every frame recomputed the\npins of every part for every wire piece (own chips with their whole\npin layout) and filled every trace pixel anew. Pins, outlines, joints\nand branches are now worked out once per change, the traces live in a\nlayer that only re-colours the wires whose signal changed, and chip\nlayouts, IC pin info and palette icons are kept. Now 21-28 ms per\nframe, also with a clock toggling every frame; the picture is pixel\nfor pixel the same as before.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.28/schaltwerk-windows.tar.gz",
-   "sha256": "77df7715c4157188d30a174532c652c1c3f23163b5e48540e2d328d39baa0adb",
-   "size": 29018937
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.29/schaltwerk-windows.tar.gz",
+   "sha256": "56a594632166a2025d8949bfedd5c0bfb3c89464f4c618abbe8b16733e458dea",
+   "size": 29023298
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.28/schaltwerk-linux.tar.gz",
-   "sha256": "2727d36854e38eb99c1dc0a1e02a675a7c28ddd7913a0f946682a7976f9d21d2",
-   "size": 46794128
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.29/schaltwerk-linux.tar.gz",
+   "sha256": "04776b1549c5e61eef9bb17359c2ea34bc3aa28076255db63381a62764be2f97",
+   "size": 46803873
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.28/schaltwerk-macos.tar.gz",
-   "sha256": "f4d70807091d1607c3ab0880914235992652881a05748b881f5e7dac4e72ee88",
-   "size": 19852548
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.29/schaltwerk-macos.tar.gz",
+   "sha256": "9e8f23394302070fe85eb79398014a2bdc77c729c410f8bc89a9ad6abeec558a",
+   "size": 19856762
   }
  }
 }
