@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 39,
- "tag": "v1.0.0-build.39",
- "published": "2026-10-11T03:52:01Z",
- "notes": "Own chips compiled into one function each, inside shown live\n\nA RISC-V datapath is mostly own chips; worked out part by part each\nchange costs a call per gate. A chip is now compiled once into Python:\nits gates as expressions in order from the inputs, parts with memory\ncalled on copies of their prims (one set per chip on the board), and\nanother round only while those change or a gate feeds back. A 32-bit\nadder as one chip runs three times as fast as opened up; a small\ncomputer whose half-clocks change little gets a bit slower but still\ndoes 13,000 clocks a second. A chip with two outputs on one net is\nopened up as before so the conflict stays visible.\n\nDouble-clicking a compiled chip now shows the values of that very chip\non the board, with its memory, while time runs on.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 40,
+ "tag": "v1.0.0-build.40",
+ "published": "2026-10-11T04:04:03Z",
+ "notes": "Short check results and examples instead of huge truth tables\n\nThe 4-bit ALU listed 512 cases after a check and drew a truth table with\n14 columns - far too long to scroll. A long result now shows the first\nsix failures and counts the rest; a formula test with numbers shows six\nexample cases and a marked row for the switches as they stand, with\nthe lamps green or red. A real truth table remains for at most four\nsingle bits. Also writes the chapter plan for the next levels.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.39/schaltwerk-windows.tar.gz",
-   "sha256": "832f1742daee9d7ba814e3180cdb794b9227451aa6eb1736a9dcfbe4b7bc11af",
-   "size": 29039212
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.40/schaltwerk-windows.tar.gz",
+   "sha256": "4232ed6528d52e555eb822231a1245c44d2932772d70c09381db890a57204b8c",
+   "size": 29044652
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.39/schaltwerk-linux.tar.gz",
-   "sha256": "4a155f61b17dd859102d7c956fe8277195c3cce2a7705ab8a86f7183676d56e4",
-   "size": 46822224
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.40/schaltwerk-linux.tar.gz",
+   "sha256": "7512812dd61a38758fba1463f1db0d5ce9289fa3d1b2205c0ade762bb736da61",
+   "size": 46814099
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.39/schaltwerk-macos.tar.gz",
-   "sha256": "0b9f58ac56f2988f434417b57f12de2a75933e0e55e8eca8fa353e052ad6a4e4",
-   "size": 19874800
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.40/schaltwerk-macos.tar.gz",
+   "sha256": "e4182c9983a169eedb0ce72e02b09c78a980860acc8bf21428f9bd7fab4cf71b",
+   "size": 19878238
   }
  }
 }
