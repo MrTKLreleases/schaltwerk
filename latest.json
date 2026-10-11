@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 36,
- "tag": "v1.0.0-build.36",
- "published": "2026-10-11T03:27:08Z",
- "notes": "Level editor in the game\n\nA hundred new levels are faster to make by building them than by writing\nJSON. The editor gets an author mode: the board is the model solution and\nits fixed parts are what the level gives (G toggles, orange corners), a\nform holds texts in both languages, hints, allowed parts and the test,\nwith buttons that derive a formula test from the given switches and\nlamps and the allowed parts and par from the solution. Check runs the\ntest without touching progress; Save writes the level into its chapter\nfile and the solution next to the others. Offered in the main menu when\nrun from the source tree; the packed game gets it with player levels.\n\nLevels with a formula test show a truth table made from it again. The\ntrace layer cache keyed boards by the id of their geometry, which Python\nhands out again after a free - it now holds the object itself.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 37,
+ "tag": "v1.0.0-build.37",
+ "published": "2026-10-11T03:34:56Z",
+ "notes": "Event-driven simulation: work out only what changed\n\nA 32-bit CPU will have thousands of parts; going over all of them in\nevery round until nothing changes does not scale. A part is now worked\nout again only when a net it reads changed; switches, clocks, buttons\nand the ROM (which look at more than their inputs) are polled at every\nsettling. Same results - every level and test passes unchanged - and a\nclock step of the 4-bit computer drops from 0.38 to 0.03 ms.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.36/schaltwerk-windows.tar.gz",
-   "sha256": "19c895c03ed5798b56c5d6f0fa25ed2bea21fc713a414ccbcd989511fc756c56",
-   "size": 29000205
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.37/schaltwerk-windows.tar.gz",
+   "sha256": "f48ab45d1d304c3d82a915375d59c0d50b4ae038361a925bdc0e264979017002",
+   "size": 29003989
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.36/schaltwerk-linux.tar.gz",
-   "sha256": "8a15d6823bbb1025fa51b0060863e23966e9ff35732c76906dd1c7936e99efa7",
-   "size": 46781503
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.37/schaltwerk-linux.tar.gz",
+   "sha256": "7a7e8397c6b542564eea6f69c74fe6a7596ba40ed0afa63deddb12b7b6dd2d83",
+   "size": 46771622
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.36/schaltwerk-macos.tar.gz",
-   "sha256": "ef1a5bc3a91e33c1504d25713caef0e613cb22c7fc73219463e656244349fadc",
-   "size": 19834955
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.37/schaltwerk-macos.tar.gz",
+   "sha256": "a751ec4280281c1ff181f67536b5191fed1a7fa3b0007626a3ff097137d00eb6",
+   "size": 19836179
   }
  }
 }
