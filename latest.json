@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 37,
- "tag": "v1.0.0-build.37",
- "published": "2026-10-11T03:34:56Z",
- "notes": "Event-driven simulation: work out only what changed\n\nA 32-bit CPU will have thousands of parts; going over all of them in\nevery round until nothing changes does not scale. A part is now worked\nout again only when a net it reads changed; switches, clocks, buttons\nand the ROM (which look at more than their inputs) are polled at every\nsettling. Same results - every level and test passes unchanged - and a\nclock step of the 4-bit computer drops from 0.38 to 0.03 ms.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 38,
+ "tag": "v1.0.0-build.38",
+ "published": "2026-10-11T03:44:46Z",
+ "notes": "Buses: wires that carry 8, 16 or 32 bits, and the parts for them\n\nA 32-bit CPU drawn with single wires would need hundreds of them per\nconnection. Pins now have a width, nets take theirs from the pins they\njoin (red where widths differ) and carry whole numbers. Switches,\nconstants and lamps get bits and a display format and become number\ninputs and displays; gates and the multiplexer work bit by bit; new are\nsplitter and combiner, a register and a RAM. Buses are drawn thicker\nwith a slash and their width, their tooltip shows the value in decimal,\nhex and signed, and formula tests read a wide switch or lamp as one\nnumber. Own chips take the width of their switches and lamps.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.37/schaltwerk-windows.tar.gz",
-   "sha256": "f48ab45d1d304c3d82a915375d59c0d50b4ae038361a925bdc0e264979017002",
-   "size": 29003989
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.38/schaltwerk-windows.tar.gz",
+   "sha256": "05e63468c9ea8bdad8df7d9546e723b9aa3373c7bfe885b179305dbae6b694cc",
+   "size": 29028294
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.37/schaltwerk-linux.tar.gz",
-   "sha256": "7a7e8397c6b542564eea6f69c74fe6a7596ba40ed0afa63deddb12b7b6dd2d83",
-   "size": 46771622
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.38/schaltwerk-linux.tar.gz",
+   "sha256": "6005497f7361f2a4d83f7ddc987fd8ebc57c9468924e3e268714ea95f706797b",
+   "size": 46802089
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.37/schaltwerk-macos.tar.gz",
-   "sha256": "a751ec4280281c1ff181f67536b5191fed1a7fa3b0007626a3ff097137d00eb6",
-   "size": 19836179
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.38/schaltwerk-macos.tar.gz",
+   "sha256": "2a14cdee03e28108e107f69450c779c703b1509c31a577ede81e81c5ff37e8e0",
+   "size": 19859515
   }
  }
 }
