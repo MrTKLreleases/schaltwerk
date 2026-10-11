@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 51,
- "tag": "v1.0.0-build.51",
- "published": "2026-10-11T12:45:47Z",
- "notes": "Plan: help, levels, mini games and the schematic view\n\nThe answers of a round of 100 questions and the packages that follow\nfrom them: the schematic view first (as the main view, the board stays\nswitchable), then help with diagnosis and the robot Ohmi, about 90 more\nlevels in stages, and mini games as rewards.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 52,
+ "tag": "v1.0.0-build.52",
+ "published": "2026-10-11T12:54:11Z",
+ "notes": "Plan: the framing story \"the workshop\"\n\nYou inherit a garage with an old PC running Schaltwerk and Ohmi, a\nhalf-built robot. Jobs come in by mail, from a job board and a forum;\nyou earn money, buy tools and parts, and grow from garage to workshop to\nlab, up to microcontrollers, robots and Ohmi waking up with your own\nRISC-V chip. The workshop is the hub, the in-game desktop holds the\nprograms. Recorded with the answers and the earlier choices it changes.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.51/schaltwerk-windows.tar.gz",
-   "sha256": "a827454ea5be01f863cf045ecd8bd6ed40ba684c3eacf8b6b2c095e4ca7a3fd3",
-   "size": 29177813
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.52/schaltwerk-windows.tar.gz",
+   "sha256": "8ce6b06f7e6366705159485a064cdec04cdd190332f1fef6b0522316246be6d2",
+   "size": 29177321
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.51/schaltwerk-linux.tar.gz",
-   "sha256": "b25f63c4bed29fcae13148394e5a10b2007dbc8a5719bab7ea0e5a329f32f706",
-   "size": 46956460
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.52/schaltwerk-linux.tar.gz",
+   "sha256": "d32a2c94d3aadb71d0e530efe085ea4d4e9faa4a8f331c6aaf9c682a54444722",
+   "size": 46953162
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.51/schaltwerk-macos.tar.gz",
-   "sha256": "af9dcb149d1a82fbe9ee7c5154f0d83ececd4e4ae0f4753271548cb2fe9f3eeb",
-   "size": 20026302
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.52/schaltwerk-macos.tar.gz",
+   "sha256": "e10a282c70d50fef5d117e883cfa8413298113493b34110e388db223243cb7f7",
+   "size": 20025644
   }
  }
 }
