@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 35,
- "tag": "v1.0.0-build.35",
- "published": "2026-10-11T03:18:12Z",
- "notes": "Model solutions as files, one per level\n\nThe level editor will save solutions, and a hundred new levels need a\nsolution each: they become data (presets/solutions/<level id>.json, one\npart and wire per line for short diffs) instead of code in the tests.\nThe Python builders move to tools/make/solutions/; the new command\n'solutions' writes the missing files from them, only if they pass with\nthree stars, and leaves existing files alone unless --force names them,\nsince they may come from the editor. Tests and tools read the files, which\nalso halves the test run.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 36,
+ "tag": "v1.0.0-build.36",
+ "published": "2026-10-11T03:27:08Z",
+ "notes": "Level editor in the game\n\nA hundred new levels are faster to make by building them than by writing\nJSON. The editor gets an author mode: the board is the model solution and\nits fixed parts are what the level gives (G toggles, orange corners), a\nform holds texts in both languages, hints, allowed parts and the test,\nwith buttons that derive a formula test from the given switches and\nlamps and the allowed parts and par from the solution. Check runs the\ntest without touching progress; Save writes the level into its chapter\nfile and the solution next to the others. Offered in the main menu when\nrun from the source tree; the packed game gets it with player levels.\n\nLevels with a formula test show a truth table made from it again. The\ntrace layer cache keyed boards by the id of their geometry, which Python\nhands out again after a free - it now holds the object itself.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.35/schaltwerk-windows.tar.gz",
-   "sha256": "dde245c36713d7a90f67824ee51942a3b24a4ee23a91dfabdeb28aa7f59e743b",
-   "size": 28965601
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.36/schaltwerk-windows.tar.gz",
+   "sha256": "19c895c03ed5798b56c5d6f0fa25ed2bea21fc713a414ccbcd989511fc756c56",
+   "size": 29000205
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.35/schaltwerk-linux.tar.gz",
-   "sha256": "510b2e39a2e5b9354d2ea651c08ed6dfe96cd9d9d6ef32a100139a059c4e368e",
-   "size": 46743213
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.36/schaltwerk-linux.tar.gz",
+   "sha256": "8a15d6823bbb1025fa51b0060863e23966e9ff35732c76906dd1c7936e99efa7",
+   "size": 46781503
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.35/schaltwerk-macos.tar.gz",
-   "sha256": "8fbf899def3d0b01bd0c380a2282238f66f38f5fc5aec9eef983ffcedd35c47a",
-   "size": 19797343
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.36/schaltwerk-macos.tar.gz",
+   "sha256": "ef1a5bc3a91e33c1504d25713caef0e613cb22c7fc73219463e656244349fadc",
+   "size": 19834955
   }
  }
 }
