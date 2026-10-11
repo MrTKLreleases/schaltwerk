@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 43,
- "tag": "v1.0.0-build.43",
- "published": "2026-10-11T04:19:13Z",
- "notes": "Chapter 9: buses and numbers (13 levels)\n\nThe first chapter on the way to the 32-bit CPU: from putting eight\nwires on a bus and taking it apart again, masks and flipping bits, to\nthe 8-bit adder from full adders, negation in two's complement,\nsubtraction, zero test, equality, less-than by subtraction, shifting,\na 4-way selector and the 8-bit ALU. Every level checks with formulas\non numbers and makes a chip the next ones build on (ADD8, SUB8, ZERO8,\nEQ8, SEL4, ALU8), with a three-star model solution laid by the router.\nThe tests no longer count chapters and levels by hand.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 44,
+ "tag": "v1.0.0-build.44",
+ "published": "2026-10-11T04:22:50Z",
+ "notes": "Chapter 10: memory and registers (8 levels)\n\nWhat the 8-bit CPU will remember with: a byte register from eight 1-bit\nregisters (after it the wide register part is allowed), the 8-bit\ncounter and the program counter with jump, a register file of four\nbytes with decoder and selector, the RAM part, a stack with stack\npointer, a shift register and the 8-bit accumulator on the ALU8.\nChips made on the way: REG8, CNT8, PC8, RF4, STACK.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.43/schaltwerk-windows.tar.gz",
-   "sha256": "3c133e7df25be7ddf6bc1e979c37596e12f2de7c82511a782fbd69d6fa978711",
-   "size": 29096371
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.44/schaltwerk-windows.tar.gz",
+   "sha256": "b1f470ebe6a8a8aaa9cdd0f4465d6712f7d8dc6710b04ed4eaaa8083430d2396",
+   "size": 29105989
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.43/schaltwerk-linux.tar.gz",
-   "sha256": "c9046b6f16cef5bea338b617d512dda28578bc1d2dbd3611d248a0c990bd2150",
-   "size": 46865809
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.44/schaltwerk-linux.tar.gz",
+   "sha256": "2e3f52a933231d91c874de78f534d83f7f25acf77e77a85fe386d58e2109b48a",
+   "size": 46875822
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.43/schaltwerk-macos.tar.gz",
-   "sha256": "25a3bd6aa315e830aeb1714bce90de8017dd67aa4035b362cbc0ccc1bc7515ba",
-   "size": 19934109
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.44/schaltwerk-macos.tar.gz",
+   "sha256": "8777c51a544070497ec2f38b15a801f5340bb46db7c570eac13c220950628a5a",
+   "size": 19942503
   }
  }
 }
