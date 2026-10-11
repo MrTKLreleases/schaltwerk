@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 34,
- "tag": "v1.0.0-build.34",
- "published": "2026-10-11T03:13:53Z",
- "notes": "Level tests as formulas instead of hand-written tables\n\nThe road to a RISC-V CPU needs about a hundred more levels, many of them\nwith 8- to 32-bit numbers: truth tables by hand do not scale (a 4-bit\nadder was already 256 rows). The new check kind \"calc\" takes formulas\nlike S = A + B over numbers made of the A0, A1 ... parts, tries every case\nup to 10 input bits and random ones beyond, and checks circuits with\nmemory through a state and its next-state formula. Formulas are a safe\nsubset of Python expressions; a level with a bad one is refused on load.\n\nSix levels now use it as a proof; their files shrink by 15,000 lines.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 35,
+ "tag": "v1.0.0-build.35",
+ "published": "2026-10-11T03:18:12Z",
+ "notes": "Model solutions as files, one per level\n\nThe level editor will save solutions, and a hundred new levels need a\nsolution each: they become data (presets/solutions/<level id>.json, one\npart and wire per line for short diffs) instead of code in the tests.\nThe Python builders move to tools/make/solutions/; the new command\n'solutions' writes the missing files from them, only if they pass with\nthree stars, and leaves existing files alone unless --force names them,\nsince they may come from the editor. Tests and tools read the files, which\nalso halves the test run.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.34/schaltwerk-windows.tar.gz",
-   "sha256": "02f1581741ee5e637d98a3eaaa16b9353dd1c76953b1ca4d8fca21d28e60e2d4",
-   "size": 28953676
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.35/schaltwerk-windows.tar.gz",
+   "sha256": "dde245c36713d7a90f67824ee51942a3b24a4ee23a91dfabdeb28aa7f59e743b",
+   "size": 28965601
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.34/schaltwerk-linux.tar.gz",
-   "sha256": "029bcd7b9d4c527acb7bc6a1ef4f7d062382cf11538d8fcd70fc9912344981f2",
-   "size": 46722690
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.35/schaltwerk-linux.tar.gz",
+   "sha256": "510b2e39a2e5b9354d2ea651c08ed6dfe96cd9d9d6ef32a100139a059c4e368e",
+   "size": 46743213
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.34/schaltwerk-macos.tar.gz",
-   "sha256": "add67caa7cfce3232b5f1c59a9d4bd0deecfcefd9a212f87d04647231852f65e",
-   "size": 19783442
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.35/schaltwerk-macos.tar.gz",
+   "sha256": "8fbf899def3d0b01bd0c380a2282238f66f38f5fc5aec9eef983ffcedd35c47a",
+   "size": 19797343
   }
  }
 }
