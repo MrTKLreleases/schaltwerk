@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 22,
- "tag": "v1.0.0-build.22",
- "published": "2026-10-11T01:38:28Z",
- "notes": "Show the inside of a chip on double click; lexicon pages for own chips\n\nA chip on the board was a black box: a double click now opens its\ncircuit to look at and try out (fixed, switches still flip, the arrow\ngoes back). The lexicon gets a page per own chip with its pinout and a\npin table with the descriptions. Clock inputs are now also found\nthrough nested chips (REG4 is built from REG1). Plans for audio\ncircuits and 500+ levels with player levels go to docs/geplant.md.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 23,
+ "tag": "v1.0.0-build.23",
+ "published": "2026-10-11T01:47:58Z",
+ "notes": "Let given wires in levels follow the player's own chips\n\nThe computer levels give wires to REG4, ALU4 and co. that only fit if\nthe player's chip has its pins where the level author planned them.\nThe presets now say where that was (pinmap, checked against the model\nchips by a test), so a chip made with another pin order gets the given\nwires laid anew. While re-laying, the other affected wires stay as\nobstacles until their turn - before, a new way could run through a\ncorner kept by a later wire and short two pins (now tested via the\nnetlist). Where no way exists the last piece runs slanted.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.22/schaltwerk-windows.tar.gz",
-   "sha256": "90bf6566449b8137da5b4e7e9fe0afdcbfa8a5a54eb2627ec30e0a0a349f16b2",
-   "size": 29006759
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.23/schaltwerk-windows.tar.gz",
+   "sha256": "86a6cc53183e6023871e5fd7ab0229e044870c0bdbdc8dafc3156cfeefce4884",
+   "size": 29009272
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.22/schaltwerk-linux.tar.gz",
-   "sha256": "fa2a7edee4ee76a1ae2689a14e822f61e3f01024a1d1afc8d84f5b727a70247f",
-   "size": 46784574
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.23/schaltwerk-linux.tar.gz",
+   "sha256": "5d84a417340ff6879e4f56221d1970e0786c109b590097dc35c820d846f8f9e3",
+   "size": 46788030
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.22/schaltwerk-macos.tar.gz",
-   "sha256": "7daa685fec9cfbad3ae64eae9d610c29414c31ae3bfa3e4b626d199e4828cc14",
-   "size": 19837865
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.23/schaltwerk-macos.tar.gz",
+   "sha256": "9395ca680677f87413a20dd5ad003bfa2c9714ad963187e766e67bf5d5f961da",
+   "size": 19841141
   }
  }
 }
