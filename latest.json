@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 30,
- "tag": "v1.0.0-build.30",
- "published": "2026-10-11T02:13:15Z",
- "notes": "Add the bus tool: lay a bundle of wires between pin groups\n\nJoining 8 pins to 8 pins took 8 wires by hand. The bus tool (B) takes\nthe pins inside a frame - or a whole IC group like A[0..3] on a click -\nthen as many target pins, and lays one wire per pair: each beside the\none before, same shape one step aside, leaving pins straight out of\ntheir parts. Both orders are tried and the one with fewer crossings\nwins. The wires share a bundle number (saved), and dragging a piece of\none moves the matching piece of the others, so the bus keeps its\nspacing.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 31,
+ "tag": "v1.0.0-build.31",
+ "published": "2026-10-11T02:25:29Z",
+ "notes": "Add chapter 12 \"Buses & displays\" with 16 levels\n\nFrom the first lit digit through decoders, a ROM as lookup table, the\nbus tool, a running light, a dot matrix driven row by row (the player\nmakes the SCAN chip) and pictures from bytes, to text on an LCD and a\ncounter display 0-9. Each level has a three-star model solution whose\nwires the router lays, as in the game. Checks read display pins\n(SEG1.a), LCD text and the matrix picture.\n\nFound on the way: a bus narrowing from both sides needs its outer\nwires first (new order outside-in); WR/CLR of the LCD move below the\ndata pins so they stay reachable after a data bus; a WR already high\nat the start of a simulation no longer writes an empty character.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.30/schaltwerk-windows.tar.gz",
-   "sha256": "01202fd4dd6dc5093ff2ccc6e6a0e3e7dab9f8893439edc3f91c31ecc261fb0f",
-   "size": 29033229
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.31/schaltwerk-windows.tar.gz",
+   "sha256": "f54906dd27e134052d7521cf57c325b7b5954acea2dfa00cef0a5c2167065fdf",
+   "size": 29049061
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.30/schaltwerk-linux.tar.gz",
-   "sha256": "28c611a4ccfb3c8633ae3519b1d18b5449e88c45003e778ced205f524f88fb83",
-   "size": 46803966
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.31/schaltwerk-linux.tar.gz",
+   "sha256": "edc76aaf512f3baace0d89011cfff805dfc919423f8de42805c12c8d7780a8d7",
+   "size": 46823360
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.30/schaltwerk-macos.tar.gz",
-   "sha256": "0c80dcd0c1cb65a44ac2e20c46248152630c5078ea4332d0425b738d8be51cd5",
-   "size": 19870028
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.31/schaltwerk-macos.tar.gz",
+   "sha256": "39f05bb453549e3f50ef2cc2d12654f63eddfeba2fd2c2b4f3b124b04444e563",
+   "size": 19881706
   }
  }
 }
