@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 33,
- "tag": "v1.0.0-build.33",
- "published": "2026-10-11T02:46:44Z",
- "notes": "Program icon with a lamp instead of the removed LED\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 34,
+ "tag": "v1.0.0-build.34",
+ "published": "2026-10-11T03:13:53Z",
+ "notes": "Level tests as formulas instead of hand-written tables\n\nThe road to a RISC-V CPU needs about a hundred more levels, many of them\nwith 8- to 32-bit numbers: truth tables by hand do not scale (a 4-bit\nadder was already 256 rows). The new check kind \"calc\" takes formulas\nlike S = A + B over numbers made of the A0, A1 ... parts, tries every case\nup to 10 input bits and random ones beyond, and checks circuits with\nmemory through a state and its next-state formula. Formulas are a safe\nsubset of Python expressions; a level with a bad one is refused on load.\n\nSix levels now use it as a proof; their files shrink by 15,000 lines.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.33/schaltwerk-windows.tar.gz",
-   "sha256": "b4caccf76bd90d8766e547831c222a9650c41e5ec0d19b023685102c22ff1a31",
-   "size": 28948937
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.34/schaltwerk-windows.tar.gz",
+   "sha256": "02f1581741ee5e637d98a3eaaa16b9353dd1c76953b1ca4d8fca21d28e60e2d4",
+   "size": 28953676
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.33/schaltwerk-linux.tar.gz",
-   "sha256": "bde7bebb3facb13c70b342b1fbe919df4da5a8b9602080730998c4de56529051",
-   "size": 46727267
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.34/schaltwerk-linux.tar.gz",
+   "sha256": "029bcd7b9d4c527acb7bc6a1ef4f7d062382cf11538d8fcd70fc9912344981f2",
+   "size": 46722690
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.33/schaltwerk-macos.tar.gz",
-   "sha256": "2da6d71faea79796a2e3dccb8b649be1ea2bebf66156b224d8ad65c18e6d5b02",
-   "size": 19780617
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.34/schaltwerk-macos.tar.gz",
+   "sha256": "add67caa7cfce3232b5f1c59a9d4bd0deecfcefd9a212f87d04647231852f65e",
+   "size": 19783442
   }
  }
 }
