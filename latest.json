@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 32,
- "tag": "v1.0.0-build.32",
- "published": "2026-10-11T02:46:36Z",
- "notes": "Remove the analog side: the game is about digital circuits now\n\nWish of the player: take the analog part out completely. Gone are the\nanalog simulation (nodal analysis, device models), the analog parts\n(sources, resistors, capacitors, coils, diodes, LEDs, transistors,\nMOSFETs, op-amps, switches, lamps, meters, probe, net names), chapters\n4-7 with their 20 levels, the analog examples, the oscilloscope, value\nand current display, sparks and smoke, five achievements and the\ntranslations only they used. The simulator is pure logic.\n\nThe remaining chapters are numbered 1-8 (56 levels); the lexicon's\nbasic terms are digital now (bits, hex, edges, bus, ASCII); progress\nfiles drop stars, circuits and achievements that no longer exist; the\nmenu background, store art, docs and Steam texts follow.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 33,
+ "tag": "v1.0.0-build.33",
+ "published": "2026-10-11T02:46:44Z",
+ "notes": "Program icon with a lamp instead of the removed LED\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.32/schaltwerk-windows.tar.gz",
-   "sha256": "84f959012cc2094dc7ab3202522374f7725508146c2afbb82d93385c2fbdb5e7",
-   "size": 28951746
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.33/schaltwerk-windows.tar.gz",
+   "sha256": "b4caccf76bd90d8766e547831c222a9650c41e5ec0d19b023685102c22ff1a31",
+   "size": 28948937
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.32/schaltwerk-linux.tar.gz",
-   "sha256": "2d6b0c6a67b13ec9096b2916d453197c1233dc742a3eb76a1bf70a7e0601ae32",
-   "size": 46725291
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.33/schaltwerk-linux.tar.gz",
+   "sha256": "bde7bebb3facb13c70b342b1fbe919df4da5a8b9602080730998c4de56529051",
+   "size": 46727267
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.32/schaltwerk-macos.tar.gz",
-   "sha256": "8dac4051f1956a216df68d65764e654a251daf73ff727846d062a57d6f37488b",
-   "size": 19779892
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.33/schaltwerk-macos.tar.gz",
+   "sha256": "2da6d71faea79796a2e3dccb8b649be1ea2bebf66156b224d8ad65c18e6d5b02",
+   "size": 19780617
   }
  }
 }
