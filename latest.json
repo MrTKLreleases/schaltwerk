@@ -1,25 +1,25 @@
 {
  "program": "schaltwerk",
  "version": "1.0.0",
- "build": 20,
- "tag": "v1.0.0-build.20",
- "published": "2026-10-11T01:31:00Z",
- "notes": "Explain IC pins in a box at the mouse, with descriptions for own chips\n\nShort names on the body cannot say everything. Resting on a pin now\nshows its full name, input or output, DIP number, value, whether a\nwire is on it and what it is for: built-in parts bring their texts,\nswitches, lamps and ports get a \"Pin description\" that an own chip\nshows at its pin.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
+ "build": 21,
+ "tag": "v1.0.0-build.21",
+ "published": "2026-10-11T01:35:44Z",
+ "notes": "Arrange chip pins in the chip dialog; wires follow changed chips\n\nPins used to land wherever the board order put them. The chip dialog\nnow shows a preview of the package and lists per side in which the\npins are dragged into order or onto another side. Since that moves pins\nof chips already in use, every board remembers where a chip's pins\nwere and lays the wires anew to their new places when it opens; a wire\non a pin that is gone or without a way is marked red.\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01NoEdM59AGBJpZA5nSCZtym",
  "assets": {
   "windows": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.20/schaltwerk-windows.tar.gz",
-   "sha256": "c554a3fdd215ce5fc91851ab4e3e1c33e4b4af595c125152efc747ec4925d4b9",
-   "size": 28987873
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.21/schaltwerk-windows.tar.gz",
+   "sha256": "b659c16b1afabba34896ee7adcb4ed423947d47f9e8e8f2642c9d243c756eec0",
+   "size": 28998183
   },
   "linux": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.20/schaltwerk-linux.tar.gz",
-   "sha256": "d0967fca4e6cd4301ace664b5b113b6feabfe00f0e9defe43a373db64f70c752",
-   "size": 46755747
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.21/schaltwerk-linux.tar.gz",
+   "sha256": "6527003035d5880ffb6dfd09f88b16891b65d199319283c073b4c3805fd7eb1a",
+   "size": 46772797
   },
   "macos": {
-   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.20/schaltwerk-macos.tar.gz",
-   "sha256": "3f0aaebe5463046f7820ce843c187042491c3835384d965026cb1f144179b77b",
-   "size": 19819794
+   "url": "https://github.com/MrTKLreleases/schaltwerk/releases/download/v1.0.0-build.21/schaltwerk-macos.tar.gz",
+   "sha256": "84f9bf1ad96699318798b34a342b80af6e5811780b0a67dded30c7d87d687bcb",
+   "size": 19832204
   }
  }
 }
